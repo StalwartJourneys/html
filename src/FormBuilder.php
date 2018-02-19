@@ -110,7 +110,7 @@ class FormBuilder extends IlluminateFormBuilder
      * @param array $optionsAttributes
      * @return string
      */
-    public function select($name, $list = [], $selected = null, array $selectAttributes = [], array $optionsAttributes = [])
+    public function select($name, $list = [], $selected = null, array $selectAttributes = [], array $optionsAttributes = [], array $optgroupsAttributes = [] )
     {
         $selectAttributes = $this->appendClassToOptions('form-control', $selectAttributes);
 
